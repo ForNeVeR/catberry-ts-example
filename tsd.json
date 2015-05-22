@@ -10,6 +10,9 @@
     },
     "gulp-typescript/gulp-typescript.d.ts": {
       "commit": "aadd63ecae3feb76ea2d4be80511e266b5c2c4a7"
+    },
+    "node/node.d.ts": {
+      "commit": "aadd63ecae3feb76ea2d4be80511e266b5c2c4a7"
     }
   }
 }

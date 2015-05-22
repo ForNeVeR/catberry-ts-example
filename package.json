@@ -1,33 +1,34 @@
 {
-    "name": "catberry-ts-example",
-    "version": "0.0.0",
-    "description": "Empty TypeScript project based on Catberry Framework",
-    "main": "./build/server.js",
-    "browser": {
-        "./config/environment.js": "./config/browser.js"
-    },
-    "author": "Friedrich von Never",
-    "license": "MIT",
-    "dependencies": {
-        "catberry": "^5.0.0",
-        "catberry-jade": "^1.0.0",
-        "connect": "^3.0.0",
-        "serve-static": "^1.0.0",
-        "errorhandler": "^1.0.0"
-    },
-    "engines": {
-        "node": ">=0.10"
-    },
-    "scripts": {
-        "prepublish": "tsd reinstall -s && gulp",
-        "start": "npm run release",
-        "release": "node ./build.js release && node ./server.js release",
-        "debug": "node ./build.js & node ./server.js",
-        "debug-win": "start /B node ./build.js && node ./server.js"
-    },
-    "devDependencies": {
-        "gulp": "gulpjs/gulp",
-        "tsd": "^0.6.0",
-        "typescript-register": "ForNeVeR/typescript-register#js"
-    }
+  "name": "catberry-ts-example",
+  "version": "0.0.0",
+  "description": "Empty TypeScript project based on Catberry Framework",
+  "main": "./build/server.js",
+  "browser": {
+    "./config/environment.js": "./config/browser.js"
+  },
+  "author": "Friedrich von Never",
+  "license": "MIT",
+  "dependencies": {
+    "catberry": "^5.0.0",
+    "catberry-jade": "^1.0.0",
+    "connect": "^3.0.0",
+    "serve-static": "^1.0.0",
+    "errorhandler": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "prepublish": "tsd reinstall -s && gulp",
+    "start": "npm run release",
+    "release": "cd build && node ./build.js release && node ./server.js release",
+    "debug": "cd build && node ./build.js & node ./server.js",
+    "debug-win": "cd build && start /B node ./build.js && node ./server.js"
+  },
+  "devDependencies": {
+    "gulp": "gulpjs/gulp",
+    "gulp-typescript": "^2.7.5",
+    "tsd": "^0.6.0",
+    "typescript-register": "ForNeVeR/typescript-register#js"
+  }
 }

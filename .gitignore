@@ -3,5 +3,7 @@
 /typings/*
 !/typings/catberry/
 
-# Stuff from atom-typescript
+/public/
+__BrowserBundle.js
+
 tsconfig.json

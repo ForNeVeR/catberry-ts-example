@@ -9,4 +9,17 @@ gulp.task('typescript', () => {
   })).pipe(gulp.dest('build/'));
 });
 
-gulp.task('default', ['typescript']);
+gulp.task('jade', () => {
+    return gulp.src('src/**/*.jade').pipe(gulp.dest('build/'));
+});
+
+gulp.task('config', () => {
+    return gulp.src('src/**/*.json').pipe(gulp.dest('build/'));
+});
+
+gulp.task('javascript', () => {
+    // TODO: Remove from final version.
+    return gulp.src('src/**/*.js').pipe(gulp.dest('build/'));
+});
+
+gulp.task('default', ['typescript', 'jade', 'config', 'javascript']);
