@@ -1,2 +1,7 @@
 /node_modules/
-__BrowserBundle.js
+/build/
+/typings/*
+!/typings/catberry/
+
+# Stuff from atom-typescript
+tsconfig.json
