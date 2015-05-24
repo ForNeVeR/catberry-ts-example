@@ -1,7 +1,6 @@
 /node_modules/
 /build/
-/typings/*
-!/typings/catberry/
+/typings/
 
 /public/
 __BrowserBundle.js
