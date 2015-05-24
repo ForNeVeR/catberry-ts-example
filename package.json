@@ -23,7 +23,7 @@
     "start": "npm run release",
     "release": "cd build && node ./build.js release && node ./server.js release",
     "debug": "cd build && node ./build.js & node ./server.js",
-    "debug-win": "cd build && start /B node ./build.js && node ./server.js"
+    "debug-win": "powershell -Command \"Start-Process -NoNewWindow node ./build.js; Start-Process -NoNewWindow -Wait node ./server.js\""
   },
   "devDependencies": {
     "gulp": "gulpjs/gulp",
