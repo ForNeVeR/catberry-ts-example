@@ -29,6 +29,6 @@
     "gulp": "gulpjs/gulp",
     "gulp-typescript": "^2.7.5",
     "tsd": "^0.6.0",
-    "typescript-register": "ForNeVeR/typescript-register#js"
+    "typescript-register": "^1.1.0"
   }
 }
