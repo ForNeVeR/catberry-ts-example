@@ -26,7 +26,7 @@
     "debug-win": "powershell -Command \"Start-Process -NoNewWindow node ./build.js; Start-Process -NoNewWindow -Wait node ./server.js\""
   },
   "devDependencies": {
-    "gulp": "gulpjs/gulp",
+    "gulp": "^3.9.0",
     "gulp-typescript": "^2.7.5",
     "tsd": "^0.6.0",
     "typescript-register": "^1.1.0"
